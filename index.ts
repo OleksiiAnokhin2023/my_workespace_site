@@ -16,9 +16,9 @@ const header = document.querySelector('header h1');
 const headerClone = document.querySelector('.header_clone');
 function HeadrClick(e: Event){
     e.preventDefault();
-    let siteUrl= "main.html";
+    let siteUrl= "index.html";
     if (e.currentTarget === headerClone) {
-         siteUrl = "../main.html";
+         siteUrl = "../index.html";
     }
 
     window.location.href = siteUrl;
