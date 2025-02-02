@@ -1,0 +1,70 @@
+header{
+    border-radius: 1px;
+}
+.menu{
+    background-color: #282828;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+        height: 25px;
+   /* width: 1500px;*/
+    margin: 0 auto;
+    border-bottom-right-radius : 10px;
+    border-bottom-left-radius : 10px;
+    color: #c7c7c7;
+}
+
+.item{
+    display: flex;
+    flex-direction: column; /* делает элементы столбцом, так что текст будет под изображением */
+    align-items: center; /* центрирует содержимое по горизонтали */
+    justify-content: center; /* центрирует содержимое по вертикали */
+    overflow: hidden; /* Обрезает все, что выходит за пределы блока */
+    cursor: pointer;
+}
+.item.active {
+    background-color: #444444; /* Выделяет активную вкладку */
+}
+#item_1{
+    border-right: 2px solid #000;
+}
+.second_layer{
+    width: 1490px;
+    display: flow-root;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: auto;
+}
+
+
+
+
+
+.button-grid {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 колонки */
+    grid-gap: 10px; /* Промежуток между кнопками */
+    padding: 20px;
+    justify-items: center;
+}
+
+
+.button-grid button {
+    padding: 10px 20px;
+    background-color: #444444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+
+.button-grid button:hover {
+    background-color: #666666;
+    transform: scale(1.05);
+}
+

@@ -1,0 +1,7 @@
+.second_layer{
+    width: 1490px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: auto;
+}

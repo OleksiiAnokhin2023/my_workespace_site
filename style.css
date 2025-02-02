@@ -1,0 +1,72 @@
+header {
+    background-color: #282828; /* Фон */
+    color: white; /* Цвет текста */
+    text-align: center; /* Выравнивание текста */
+    padding: 10px; /* Внутренние отступы */
+    font-size: 24px; /* Размер шрифта */
+    font-family: 'Arial', sans-serif; /* Шрифт */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    border-bottom: 2px solid #3c3c3c; /* Нижняя граница */
+    /*border: none; /* Убираем границу */
+    border-radius: 10px; /* Закругленные углы */
+
+}
+header h1 {
+    cursor: pointer; /* Курсор в виде руки при наведении */
+}
+body{
+    background-color: #3c3c3c;
+}
+.second_layer{
+    background-color: #c7c7c7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* создает три колонки с равным разделением */
+    grid-gap: 1px; /* пространство между элементами сетки */
+    height: 650px;
+    width: 1500px;
+    margin: 0 auto;
+    border-bottom-right-radius : 10px;
+    border-bottom-left-radius : 10px;
+}
+
+/* Ссылки */
+.second_layer a {
+    display: block;
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 0;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.second_layer p{
+    font-size: 20px;
+}
+
+.second_layer a:hover {
+    color: #004999;
+    transform: translateX(5px);
+}
+
+.tag img{
+    width: 100px;
+}
+.tag h3{
+    margin-top: 5px; /* небольшой отступ от изображения к тексту */
+
+}
+.tag{
+    display: flex;
+    flex-direction: column; /* делает элементы столбцом, так что текст будет под изображением */
+    align-items: center; /* центрирует содержимое по горизонтали */
+    justify-content: center; /* центрирует содержимое по вертикали */
+    overflow: hidden; /* Обрезает все, что выходит за пределы блока */
+}
+.tag_2{
+    cursor: pointer; /* Курсор в виде руки при наведении */
+    transition: transform 0.3s ease; /* Добавляем анимацию для плавного увеличения */
+    text-align: center;
+}
+.tag_2:hover {
+    transform: scale(1.2); /* Увеличивает размер элементов на 10% */
+}
